@@ -34,8 +34,6 @@ jobs:
 
           # 思源宋体JP
           # 下载
-          wget https://github.com/adobe-fonts/source-han-sans/releases/download/2.005R/07_SourceHanSansJ.zip
-          wget https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/07_SourceHanSerifJ.zip
           wget https://github.com/adobe-fonts/source-han-serif/releases/latest/download/07_SourceHanSansJ.zip
           # 解压
           unzip 07_SourceHanSansJ.zip
