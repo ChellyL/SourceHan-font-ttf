@@ -34,9 +34,9 @@ jobs:
 
           # 思源宋体JP
           # 下载
-          wget https://github.com/adobe-fonts/source-han-serif/releases/latest/download/07_SourceHanSansJ.zip
+          wget https://github.com/adobe-fonts/source-han-serif/releases/latest/download/07_SourceHanSerifJ.zip
           # 解压
-          unzip 07_SourceHanSansJ.zip
+          unzip 07_SourceHanSerifJ.zip
           # 转换
           otf2ttf OTF/Japanese/*.otf
           # 获取版本
@@ -45,7 +45,7 @@ jobs:
           mv OTF/Japanese/*.ttf font
           # 压缩
           cd font
-          zip -9 -r -UN=UTF8 ../SourceHanSansJ_TTF_$version.zip *.ttf
+          zip -9 -r -UN=UTF8 ../SourceHanSerifJ_TTF_$version.zip *.ttf
           cd ${{ github.workspace }}
           # 清理
           rm -rf OTF font *.txt
